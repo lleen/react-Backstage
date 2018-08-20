@@ -11,7 +11,8 @@ class Login extends Component {
 		e.preventDefault()
 		let username = this.username.value
 		let password = this.password.value
-			this.props.commons_action.login({
+		console.log(this.props)
+			this.props.jzx_action.get_login({
 				username, password,
 				success: () => {
 					this.props.history.push('/')
@@ -43,4 +44,4 @@ class Login extends Component {
 }
 
 // export default Login
-export default connect(Login, 'commons')
+export default connect(Login, 'jzx')

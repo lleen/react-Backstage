@@ -9,13 +9,14 @@ const http = {
         method: options.method || 'GET',
         params: options.params || {}
       }).then(res => {
+        console.log(res,23456789)
         bus.emit('app-IsLoading')
-        if (res.data.code === 200) {
+        if (res.status === 200) {
           resolve(res.data.data)
         } else {
           bus.emit('app-IsLoading')
-          let err = { code: res.data.code }
-          err.message = this.VerificationError(res.data.code)
+          let err = { code: res.status }
+          err.message = this.VerificationError(res.status)
           reject(err)
         }
       })
