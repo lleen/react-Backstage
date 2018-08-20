@@ -1,6 +1,6 @@
 
 const state = {
-    user_start:null,
+    user_state:null,
     is_menu:null
 }
 
