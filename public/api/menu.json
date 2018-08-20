@@ -1,0 +1,45 @@
+{
+  "code": 200,
+  "data" :[
+      {
+        "title": "入库",
+        "path": "/",
+        "children": [
+          {
+            "title": "入库管理",
+            "path":  "/"
+          },{
+            "title": "添加入库",
+            "path": "/Storage/addStorage"
+          }
+        ]
+      },
+      {
+        "title": "商品信息管理",
+        "path": "/ProductInformation",
+        "children": [
+          {
+            "title": "我的考勤",
+            "path":  "/ProductInformation/addGoodslist"
+          },{
+            "title": "请假加班",
+            "path": "/ProductInformation/GoodsManagement"
+          }
+        ]
+      },
+      {
+        "title": "业务往来管理",
+        "path": "/Business",
+        "children": [
+          {
+            "title": "供应商管理",
+            "path":  "/Business/AddSupplier"
+          }
+        ]
+      },
+      {
+        "title": "修改密码",
+        "path": "/ChangePassword"
+      }
+  ]
+}

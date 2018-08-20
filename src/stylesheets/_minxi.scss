@@ -1,0 +1,9 @@
+// 处理圆角边框
+@mixin dt-border-radius {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.a{
+    @include dt-border-radius
+}

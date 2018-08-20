@@ -1,0 +1,44 @@
+// 放一些设置 padding magin 的代码
+.w50{
+    width: 50%;
+}
+.w25{
+    width: 25%;
+}
+.w20{
+    width: 20%;
+}
+.w33{
+    width: 33.333333%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.db{
+    display: block !important;
+}
+.dn{
+    display: none;
+}
+
+.fillet{
+    @include dt-border-radius;
+}
+
+
+.logo {
+    height: 32px;
+    background: rgba(255,255,255,.2);
+    margin: 16px;
+    text-align: center;
+    font-size:0.8em;
+    line-height: 32px;
+    color: aliceblue;
+  }
+.kuan{
+    position: fixed;
+    max-width: 200px; min-width: 80px;
+}
